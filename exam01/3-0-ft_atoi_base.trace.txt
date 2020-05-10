@@ -1,0 +1,81 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r7p30.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Fri Jan 17 20:02:45 PST 2020
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2020/piscine-c-exam01/exam_20200118/tri
+
+= Git history ==================================================================
+$> git -C /var/folders/bw/pn6jj9cx5272nsqsr58kfwf80000gp/T/tmpgssOOx/user log --pretty='%H - %an, %ad : %s'
+3d2887f77a387ced656a8f0d5d29b4ad80e66b5b - Exam 42, Fri Jan 17 20:02:30 2020 -0800 : ex3-0
+250e5029bff85e5ad6b1f78975a6f0c3270f5433 - Exam 42, Fri Jan 17 19:51:05 2020 -0800 : 3-0
+8ac8a924ef44897dad80b689de930ed8cea1b972 - Exam 42, Fri Jan 17 19:33:09 2020 -0800 : 2-0
+f2e4cb39942f671374b2508937dae29e3e2d88c1 - Exam 42, Fri Jan 17 18:42:07 2020 -0800 : 1-0
+8e346f2f6d5d1ae293809299551928437f399272 - Exam 42, Fri Jan 17 18:13:27 2020 -0800 : 0-0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/bw/pn6jj9cx5272nsqsr58kfwf80000gp/T/tmpgssOOx/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1173 Jan 17 20:02 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 17 20:02 alpha_mirror
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 17 20:02 ft_atoi_base
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 17 20:02 maff_revalpha
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 17 20:02 rev_print
+
+/var/folders/bw/pn6jj9cx5272nsqsr58kfwf80000gp/T/tmpgssOOx/user/alpha_mirror:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1549 Jan 17 20:02 alpha_mirror.c
+
+/var/folders/bw/pn6jj9cx5272nsqsr58kfwf80000gp/T/tmpgssOOx/user/ft_atoi_base:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1160 Jan 17 20:02 ft_atoi_base.c
+
+/var/folders/bw/pn6jj9cx5272nsqsr58kfwf80000gp/T/tmpgssOOx/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1010 Jan 17 20:02 maff_revalpha.c
+
+/var/folders/bw/pn6jj9cx5272nsqsr58kfwf80000gp/T/tmpgssOOx/user/rev_print:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1211 Jan 17 20:02 rev_print.c
+ 
+= ft_atoi_base =================================================================
+$> gcc -Wextra -Wall -Werror ft_atoi_base.c main.c -o user_exe 
+ft_atoi_base.c:13:6: error: first parameter of 'main' (argument count) must be of type 'int'
+int             main(const char *str, int str_base)
+                ^
+ft_atoi_base.c:13:6: error: second parameter of 'main' (argument array) must be of type 'char **'
+ft_atoi_base.c:26:39: error: '&&' within '||' [-Werror,-Wlogical-op-parentheses]
+                        || str[i] == '\r' || str[i] == ' ' && str[i])
+                                          ~~ ~~~~~~~~~~~~~~^~~~~~~~~
+ft_atoi_base.c:26:39: note: place parentheses around the '&&' expression to silence this warning
+                        || str[i] == '\r' || str[i] == ' ' && str[i])
+                                                           ^
+                                             (                      )
+ft_atoi_base.c:28:9: error: expected expression
+        while (
+               ^
+ft_atoi_base.c:28:9: error: expected '}'
+ft_atoi_base.c:14:1: note: to match this '{'
+{
+^
+5 errors generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================

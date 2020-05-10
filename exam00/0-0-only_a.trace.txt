@@ -1,0 +1,47 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z3r4p25.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Fri Jan 10 19:29:33 PST 2020
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2020/piscine-c-exam00/exam_20200111/tri
+
+= Git history ==================================================================
+$> git -C /var/folders/sk/m_b_rjwx5kv9pt3d1bhk480m0000gp/T/tmprQKMXt/user log --pretty='%H - %an, %ad : %s'
+75bb718d7b425ae6f8842d12f1c03b9a0db06472 - Exam 42, Fri Jan 10 19:28:01 2020 -0800 : Finish 0-0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/sk/m_b_rjwx5kv9pt3d1bhk480m0000gp/T/tmprQKMXt/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  229 Jan 10 19:29 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 10 19:29 only_a
+
+/var/folders/sk/m_b_rjwx5kv9pt3d1bhk480m0000gp/T/tmprQKMXt/user/only_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1060 Jan 10 19:29 only_a.c
+ 
+= only_a =======================================================================
+$> gcc -Wextra -Wall -Werror only_a.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./98obk35x1xrbrkjr1pv8vbhx 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

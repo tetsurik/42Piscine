@@ -1,0 +1,89 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r5p27.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Fri Jan 10 21:59:09 PST 2020
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 10.0.0 (clang-1000.10.44.4)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 10.0.0 (clang-1000.10.44.4)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2020/piscine-c-exam00/exam_20200111/tri
+
+= Git history ==================================================================
+$> git -C /var/folders/sb/pg8gdlgs44d022fw03rtyk2r0000gp/T/tmpzX4fum/user log --pretty='%H - %an, %ad : %s'
+15139b9de6725f870dbd16471d7e1a21857c7661 - Exam 42, Fri Jan 10 21:58:52 2020 -0800 : f
+869a62974ee652d65d5d9cc4f63b97eb7bfe0e1f - Exam 42, Fri Jan 10 21:26:48 2020 -0800 : Finish 3-0
+e10fa624270262f2097024534f9f47a1b48e46da - Exam 42, Fri Jan 10 20:11:36 2020 -0800 : Finish 2-0
+5d207cd78fa28373e0038de07306547aefc49136 - Exam 42, Fri Jan 10 19:48:50 2020 -0800 : Finish 0-1
+75bb718d7b425ae6f8842d12f1c03b9a0db06472 - Exam 42, Fri Jan 10 19:28:01 2020 -0800 : Finish 0-0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/sb/pg8gdlgs44d022fw03rtyk2r0000gp/T/tmpzX4fum/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1184 Jan 10 21:59 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 10 21:59 ft_countdown
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 10 21:59 ft_strcmp
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 10 21:59 ft_strrev
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 10 21:59 maff_revalpha
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 10 21:59 only_a
+
+/var/folders/sb/pg8gdlgs44d022fw03rtyk2r0000gp/T/tmpzX4fum/user/ft_countdown:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1134 Jan 10 21:59 ft_countdown.c
+
+/var/folders/sb/pg8gdlgs44d022fw03rtyk2r0000gp/T/tmpzX4fum/user/ft_strcmp:
+total 8
+-rw-r--r--  1 deepthought  deepthought  972 Jan 10 21:59 ft_strcmp.c
+
+/var/folders/sb/pg8gdlgs44d022fw03rtyk2r0000gp/T/tmpzX4fum/user/ft_strrev:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1097 Jan 10 21:59 ft_strrev.c
+
+/var/folders/sb/pg8gdlgs44d022fw03rtyk2r0000gp/T/tmpzX4fum/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1258 Jan 10 21:59 maff_revalpha.c
+
+/var/folders/sb/pg8gdlgs44d022fw03rtyk2r0000gp/T/tmpzX4fum/user/only_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1060 Jan 10 21:59 only_a.c
+ 
+= ft_strrev ====================================================================
+$> gcc -Wextra -Wall -Werror ft_strrev.c main.c -o user_exe 
+ft_strrev.c:34:8: error: incompatible integer to pointer conversion returning 'char' from a function with result type 'char *'; take the address with & [-Werror,-Wint-conversion]
+        return(*str);
+              ^~~~~~
+              &
+ft_strrev.c:18:7: error: unused variable 'b' [-Werror,-Wunused-variable]
+        char b[j];
+             ^
+ft_strrev.c:17:9: error: variable 'i' is uninitialized when used here [-Werror,-Wuninitialized]
+        char a[i];
+               ^
+ft_strrev.c:15:7: note: initialize the variable 'i' to silence this warning
+        int i;
+             ^
+              = 0
+ft_strrev.c:18:9: error: variable 'j' is uninitialized when used here [-Werror,-Wuninitialized]
+        char b[j];
+               ^
+ft_strrev.c:16:7: note: initialize the variable 'j' to silence this warning
+        int j;
+             ^
+              = 0
+4 errors generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================

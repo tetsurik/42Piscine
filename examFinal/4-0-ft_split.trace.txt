@@ -1,0 +1,75 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r6p9.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Fri Jan 31 16:14:25 PST 2020
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2020/piscine-c-exam-final/exam_20200131/tri
+
+= Git history ==================================================================
+$> git -C /var/folders/3m/m4h5wjn96836fqr0nchdjnq00000gp/T/tmpi1bVk6/user log --pretty='%H - %an, %ad : %s'
+d8f0ba440bb1c641f0dc0fdbbdfc49dac8644aa6 - Exam 42, Fri Jan 31 16:13:31 2020 -0800 : 4-0
+2a4d086ca39d5f6db24317fbe0fd1367f5d0e1e7 - Exam 42, Fri Jan 31 11:27:45 2020 -0800 : 3-0
+029b09cb7f4591e903e6c1d7922887c249a19d4b - Exam 42, Fri Jan 31 10:55:16 2020 -0800 : 2-0
+ef051cd4555f2653a2a5da2a78bfca68019d0f59 - Exam 42, Fri Jan 31 10:30:33 2020 -0800 : 1-0
+9d72e58089fc68024872a5699b8a40853376ee58 - Exam 42, Fri Jan 31 10:23:03 2020 -0800 : 0-0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/3m/m4h5wjn96836fqr0nchdjnq00000gp/T/tmpi1bVk6/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1191 Jan 31 16:14 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 31 16:14 aff_first_param
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 31 16:14 epur_str
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 31 16:14 ft_split
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 31 16:14 ft_strdup
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 31 16:14 ft_swap
+
+/var/folders/3m/m4h5wjn96836fqr0nchdjnq00000gp/T/tmpi1bVk6/user/aff_first_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1143 Jan 31 16:14 aff_first_param.c
+
+/var/folders/3m/m4h5wjn96836fqr0nchdjnq00000gp/T/tmpi1bVk6/user/epur_str:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1401 Jan 31 16:14 epur_str.c
+
+/var/folders/3m/m4h5wjn96836fqr0nchdjnq00000gp/T/tmpi1bVk6/user/ft_split:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2643 Jan 31 16:14 ft_split.c
+
+/var/folders/3m/m4h5wjn96836fqr0nchdjnq00000gp/T/tmpi1bVk6/user/ft_strdup:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1208 Jan 31 16:14 ft_strdup.c
+
+/var/folders/3m/m4h5wjn96836fqr0nchdjnq00000gp/T/tmpi1bVk6/user/ft_swap:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1002 Jan 31 16:14 ft_swap.c
+ 
+= ft_split =====================================================================
+$> gcc -Wextra -Wall -Werror ft_split.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./v2otv0612bjbode2dhm9nfsg ""
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1	2020-01-31 16:14:28.000000000 -0800$
++++ test1.output	2020-01-31 16:14:28.000000000 -0800$
+@@ -1 +0,0 @@$
+-$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

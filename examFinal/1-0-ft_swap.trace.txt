@@ -1,0 +1,93 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r4p29.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Fri Jan 31 10:31:19 PST 2020
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2020/piscine-c-exam-final/exam_20200131/tri
+
+= Git history ==================================================================
+$> git -C /var/folders/sk/q2ttklxs07j_q5581sww_dnh0000gp/T/tmpRXMh96/user log --pretty='%H - %an, %ad : %s'
+ef051cd4555f2653a2a5da2a78bfca68019d0f59 - Exam 42, Fri Jan 31 10:30:33 2020 -0800 : 1-0
+9d72e58089fc68024872a5699b8a40853376ee58 - Exam 42, Fri Jan 31 10:23:03 2020 -0800 : 0-0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/sk/q2ttklxs07j_q5581sww_dnh0000gp/T/tmpRXMh96/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  463 Jan 31 10:31 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 31 10:31 aff_first_param
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 31 10:31 ft_swap
+
+/var/folders/sk/q2ttklxs07j_q5581sww_dnh0000gp/T/tmpRXMh96/user/aff_first_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1143 Jan 31 10:31 aff_first_param.c
+
+/var/folders/sk/q2ttklxs07j_q5581sww_dnh0000gp/T/tmpRXMh96/user/ft_swap:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1002 Jan 31 10:31 ft_swap.c
+ 
+= ft_swap ======================================================================
+$> gcc -Wextra -Wall -Werror ft_swap.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./cqutrpyl3eljaxg12lwp6zlu "-942963456" "-430147081"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./z8dk8v1lz8gwkmuc00gl8dlm "-170921267" "-1895022765"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./6nnvb5n8tr63calduvw00ra0 "114907480" "848933121"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./kkr1t1ky95acq2i2o187dg3u "1814679645" "411994797"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./z0o80w27ty829okfca3a1473 "865740719" "-1591751193"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./x36moa3d8had4werdd0xjm00 "644399507" "2071626873"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./l4ued1c021km3vl9o3au4brc "-1632125448" "-1357268640"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./7ne2ss2t2n3m0b063kftykfs "968094719" "652978909"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./qziatix4cs9u3w45x7vssb3h "591055904" "1228936845"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

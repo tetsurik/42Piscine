@@ -1,0 +1,65 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r7p18.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Fri Jan 24 20:50:55 PST 2020
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2020/piscine-c-exam02/exam_20200125/tri
+
+= Git history ==================================================================
+$> git -C /var/folders/5l/j0tj99k10dz7wtr64fjsv9rh0000gp/T/tmpvmrHUB/user log --pretty='%H - %an, %ad : %s'
+ca4c311b19671a4ec48f53bc246c7932958e6f41 - Exam 42, Fri Jan 24 20:40:54 2020 -0800 : 2-1
+814cb2f3df68354bbe9a94130c82f3304703818a - Exam 42, Fri Jan 24 20:07:54 2020 -0800 : 2-0
+8910a0ff4d4e0b2d79dada259af1192a1b4b9451 - Exam 42, Fri Jan 24 18:37:53 2020 -0800 : 1-0
+5a3ff613f4ffdd437472505cd3be4a786e4de69b - Exam 42, Fri Jan 24 18:23:12 2020 -0800 : 0-1
+314f2707c69995c8706f2fddba16f82aa499b7a9 - Exam 42, Fri Jan 24 18:13:01 2020 -0800 : 0-0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/5l/j0tj99k10dz7wtr64fjsv9rh0000gp/T/tmpvmrHUB/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1134 Jan 24 20:50 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 24 20:50 ft_countdown
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 24 20:50 ft_strdup
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 24 20:50 ft_strrev
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 24 20:50 hello
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 24 20:50 rev_print
+
+/var/folders/5l/j0tj99k10dz7wtr64fjsv9rh0000gp/T/tmpvmrHUB/user/ft_countdown:
+total 8
+-rw-r--r--  1 deepthought  deepthought  976 Jan 24 20:50 ft_countdown.c
+
+/var/folders/5l/j0tj99k10dz7wtr64fjsv9rh0000gp/T/tmpvmrHUB/user/ft_strdup:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1217 Jan 24 20:50 ft_strdup.c
+
+/var/folders/5l/j0tj99k10dz7wtr64fjsv9rh0000gp/T/tmpvmrHUB/user/ft_strrev:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1124 Jan 24 20:50 ft_strrev.c
+
+/var/folders/5l/j0tj99k10dz7wtr64fjsv9rh0000gp/T/tmpvmrHUB/user/hello:
+total 8
+-rw-r--r--  1 deepthought  deepthought  966 Jan 24 20:50 hello.c
+
+/var/folders/5l/j0tj99k10dz7wtr64fjsv9rh0000gp/T/tmpvmrHUB/user/rev_print:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1154 Jan 24 20:50 rev_print.c
+ 
+= ft_atoi_base =================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 0 ===============================================================
